@@ -172,6 +172,18 @@ view: user_daily {
     label: "Number of user in daily table"
     type: count_distinct
     sql: ${user_id} ;;
+    filters: [game_version: "ios"]
+    drill_fields: [utc_date,count_user]
+  }
+
+  measure: count_user_1 {
+    label: "Number of user in daily table"
+    type: count_distinct
+    sql: ${user_id} ;;
+    filters: {
+      field:game_version
+      value:"ios"
+    }
     drill_fields: [utc_date,count_user]
   }
 }

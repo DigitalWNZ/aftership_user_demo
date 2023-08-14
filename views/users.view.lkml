@@ -66,7 +66,7 @@ view: users {
     description: "Number of users"
     value_format_name: decimal_0
     type: count
-    sql: ${user_id} ;;
+    # sql: ${user_id} ;;
     drill_fields: [first_platform,first_game_version,count]
   }
 
