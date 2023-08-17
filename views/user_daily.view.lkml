@@ -172,7 +172,7 @@ view: user_daily {
     label: "Number of user in daily table"
     type: count_distinct
     sql: ${user_id} ;;
-    filters: [game_version: "ios"]
+    # filters: [game_version: "ios"]
     drill_fields: [utc_date,count_user]
   }
 
